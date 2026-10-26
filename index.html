@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia en el País de las Maravillas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Alicia en el País de las Maravillas</h1>
+        <p>Resuelve los desafíos del País de las Maravillas</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. La poción mágica</h2>
+            <form id="formPocion">
+                <label for="altura">Altura inicial en cm:</label>
+                <input type="number" id="altura" min="1" required>
+
+                <label for="pocion">Mililitros de poción:</label>
+                <input type="number" id="pocion" min="0" max="100" required>
+
+                <button type="submit">Calcular altura</button>
+            </form>
+            <p id="resultadoPocion" class="resultado"></p>
+        </section>
+
+        <section>
+            <h2>2. La merienda del Sombrerero</h2>
+            <form id="formMerienda">
+                <label for="nombre">Nombre del invitado:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="bebida">Elige una bebida:</label>
+                <select id="bebida" required>
+                    <option value="">Selecciona una bebida</option>
+                    <option value="te">Té - Bs 5</option>
+                    <option value="cafe">Café - Bs 7</option>
+                    <option value="chocolate">Chocolate - Bs 8</option>
+                    <option value="jugo">Jugo - Bs 6</option>
+                </select>
+
+                <label for="tazas">Cantidad de tazas:</label>
+                <input type="number" id="tazas" min="1" max="20" required>
+
+                <button type="submit">Calcular cuenta</button>
+            </form>
+            <p id="resultadoMerienda" class="resultado"></p>
+        </section>
+
+        <section>
+            <h2>3. El desafío de la Reina</h2>
+            <form id="formReina">
+                <label for="cantidad">Ingresa un número entero positivo:</label>
+                <input type="number" id="cantidad" min="1" max="100" step="1" required>
+
+                <button type="submit">Analizar números</button>
+            </form>
+            <p id="resultadoReina" class="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto de Programación Web I</p>
+    </footer>
+</body>
+</html>
